@@ -32,7 +32,9 @@ class CreateCashRegisterService implements CreateCashRegisterServiceInterface
     public function create(array $data): array
     {
         try {
-            $cashRegister = $this->cashRegisterRepository->findByValueAndDenomination($data['denomination'], $data['value']);
+            $cashRegister = $this
+                ->cashRegisterRepository
+                ->findByValueAndDenomination($data['denomination'], $data['value']);
 
             if (empty($cashRegister)) {
                 $this->cashRegisterRepository->create($data);

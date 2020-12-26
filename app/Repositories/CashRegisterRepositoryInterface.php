@@ -24,4 +24,9 @@ interface CashRegisterRepositoryInterface
      * @return CashRegister|null
      */
     public function findByValueAndDenomination(string $denomination, int $value);
+
+    /**
+     * @return array
+     */
+    public function getAvailableCash(): array;
 }

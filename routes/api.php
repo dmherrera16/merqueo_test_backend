@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post("cashRegister/create", "CashRegister\CreateCashRegisterController")->name("cashRegister.create");
+Route::post("movement/create", "Movement\CreateMovementController")->name("movement.create");

@@ -42,4 +42,16 @@ class CashRegisterRepository implements CashRegisterRepositoryInterface
     {
         return $this->cashRegisterModel->where(['denomination' => $denomination, 'value' => $value])->first();
     }
+
+    /**
+     * @return array
+     */
+    public function getAvailableCash(): array
+    {
+        $availableCash = $this->cashRegisterModel->where('quantity', '>', 0)->orderBy('value', 'desc')->get();
+        if (empty($availableCash)) {
+            return [];
+        }
+        return $availableCash->toArray();
+    }
 }
