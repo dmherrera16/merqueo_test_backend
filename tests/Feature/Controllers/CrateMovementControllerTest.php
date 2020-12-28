@@ -24,7 +24,7 @@ class CrateMovementControllerTest extends TestCase
     public function createMovementSuccess()
     {
         $dataCash = [
-            "denomination" => "billetes",
+            "denomination" => "billete",
             "quantity" => 2,
             "value" => 10000
         ];
@@ -35,7 +35,7 @@ class CrateMovementControllerTest extends TestCase
 
         $data["transactions"] = [
             [
-                "denomination" => "billetes",
+                "denomination" => "billete",
                 "quantity" => 2,
                 "value" => 10000
             ],
@@ -52,7 +52,7 @@ class CrateMovementControllerTest extends TestCase
         $response->assertJson(['message' => __('movement.create_success')]);
         $this->assertDatabaseHas('movements', $dataMovement);
         $this->assertDatabaseHas('cash_register', [
-                "denomination" => "billetes",
+                "denomination" => "billete",
                 "quantity" => 3,
                 "value" => 10000
             ]

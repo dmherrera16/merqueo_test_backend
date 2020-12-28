@@ -12,11 +12,4 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Movements extends Model
 {
     protected $fillable = ['type', 'amount'];
-    /**
-     * @return HasMany
-     */
-    public function transactions(): HasMany
-    {
-        return $this->hasMany(Transactions::class);
-    }
 }

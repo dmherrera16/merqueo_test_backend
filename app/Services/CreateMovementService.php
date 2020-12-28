@@ -58,15 +58,6 @@ class CreateMovementService implements CreateMovementServiceInterface
                 throw new \Exception(__('movement.money_back_failed'));
             }
 
-            if ($totalMoneyBack == 0) {
-                return ["message" => 'El pago es exacto, no hay necesidad de devuelta'];
-            }
-
-            $response = $this->getMoneyBack($totalMoneyBack);
-            if (empty($response)) {
-                throw new \Exception(__('movement.money_back_failed'));
-            }
-
             $saveMovement = $this->movementRepository->create($data);
             if (!$saveMovement) {
                 throw new \Exception(__('movement.create_failed'));
@@ -74,6 +65,15 @@ class CreateMovementService implements CreateMovementServiceInterface
 
             foreach ($data['transactions'] as $transaction) {
                 $this->createCashRegisterService->create($transaction);
+            }
+
+            if ($totalMoneyBack == 0) {
+                return ["message" => 'El pago es exacto, no hay necesidad de devuelta'];
+            }
+
+            $response = $this->getMoneyBack($totalMoneyBack);
+            if (empty($response)) {
+                throw new \Exception(__('movement.money_back_failed'));
             }
 
             foreach ($response as $transaction) {

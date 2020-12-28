@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\wamp64\www\laravel\merqueo_test_backend\app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/style.css" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">C:\wamp64\www\laravel\merqueo_test_backend\app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Services/StatusCashRegisterService.php.html#7">App\Services\StatusCashRegisterService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/EmptyCashRegisterController.php.html#9">App\Http\Controllers\CashRegister\EmptyCashRegisterController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GetMovementsService.php.html#7">App\Services\GetMovementsService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GetAllMovementsService.php.html#7">App\Services\GetAllMovementsService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EmptyCashRegisterService.php.html#8">App\Services\EmptyCashRegisterService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#8">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Transactions.php.html#12">App\Models\Transactions</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Movements.php.html#12">App\Models\Movements</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/CashRegister.php.html#11">App\Models\CashRegister</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#7">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#9">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetMovementsController.php.html#9">App\Http\Controllers\Movement\GetMovementsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetAllMovementsController.php.html#10">App\Http\Controllers\Movement\GetAllMovementsController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/StatusCashRegisterController.php.html#9">App\Http\Controllers\CashRegister\StatusCashRegisterController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CreateMovementsRepository.php.html#12">App\Repositories\CreateMovementsRepository</a></td><td class="text-right">27%</td></tr>
+       <tr><td><a href="Repositories/CashRegisterRepository.php.html#11">App\Repositories\CashRegisterRepository</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Console/Kernel.php.html#8">App\Console\Kernel</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Services/CreateMovementService.php.html#13">App\Services\CreateMovementService</a></td><td class="text-right">81%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Models/CashRegister.php.html#11">App\Models\CashRegister</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Services/EmptyCashRegisterService.php.html#8">App\Services\EmptyCashRegisterService</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Services/GetAllMovementsService.php.html#7">App\Services\GetAllMovementsService</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repositories/CreateMovementsRepository.php.html#12">App\Repositories\CreateMovementsRepository</a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="Services/CreateMovementService.php.html#13">App\Services\CreateMovementService</a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/EmptyCashRegisterController.php.html#9">App\Http\Controllers\CashRegister\EmptyCashRegisterController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/StatusCashRegisterController.php.html#9">App\Http\Controllers\CashRegister\StatusCashRegisterController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetAllMovementsController.php.html#10">App\Http\Controllers\Movement\GetAllMovementsController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetMovementsController.php.html#9">App\Http\Controllers\Movement\GetMovementsController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/StatusCashRegisterService.php.html#7">App\Services\StatusCashRegisterService</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/CashRegisterRepository.php.html#11">App\Repositories\CashRegisterRepository</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#9">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Kernel.php.html#25"><abbr title="App\Console\Kernel::schedule">schedule</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Transactions.php.html#17"><abbr title="App\Models\Transactions::movement">movement</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/StatusCashRegisterService.php.html#11"><abbr title="App\Services\StatusCashRegisterService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GetMovementsService.php.html#16"><abbr title="App\Services\GetMovementsService::getAmountMovementsByDate">getAmountMovementsByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GetMovementsService.php.html#11"><abbr title="App\Services\GetMovementsService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GetAllMovementsService.php.html#16"><abbr title="App\Services\GetAllMovementsService::getAllMovements">getAllMovements</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GetAllMovementsService.php.html#11"><abbr title="App\Services\GetAllMovementsService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EmptyCashRegisterService.php.html#22"><abbr title="App\Services\EmptyCashRegisterService::emptyCashRegister">emptyCashRegister</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EmptyCashRegisterService.php.html#13"><abbr title="App\Services\EmptyCashRegisterService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CreateMovementsRepository.php.html#51"><abbr title="App\Repositories\CreateMovementsRepository::getAllMovements">getAllMovements</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CreateMovementsRepository.php.html#41"><abbr title="App\Repositories\CreateMovementsRepository::getAmountMovementsByDate">getAmountMovementsByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CashRegisterRepository.php.html#63"><abbr title="App\Repositories\CashRegisterRepository::getStatusCashRegister">getStatusCashRegister</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/EmptyCashRegisterController.php.html#13"><abbr title="App\Http\Controllers\CashRegister\EmptyCashRegisterController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#15"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Movements.php.html#18"><abbr title="App\Models\Movements::transactions">transactions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/CashRegister.php.html#27"><abbr title="App\Models\CashRegister::validateMoneyBack">validateMoneyBack</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#14"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetMovementsController.php.html#18"><abbr title="App\Http\Controllers\Movement\GetMovementsController::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetMovementsController.php.html#13"><abbr title="App\Http\Controllers\Movement\GetMovementsController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetAllMovementsController.php.html#19"><abbr title="App\Http\Controllers\Movement\GetAllMovementsController::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetAllMovementsController.php.html#14"><abbr title="App\Http\Controllers\Movement\GetAllMovementsController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/StatusCashRegisterController.php.html#18"><abbr title="App\Http\Controllers\CashRegister\StatusCashRegisterController::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/StatusCashRegisterController.php.html#13"><abbr title="App\Http\Controllers\CashRegister\StatusCashRegisterController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/EmptyCashRegisterController.php.html#18"><abbr title="App\Http\Controllers\CashRegister\EmptyCashRegisterController::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/StatusCashRegisterService.php.html#16"><abbr title="App\Services\StatusCashRegisterService::statusCashRegister">statusCashRegister</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/CreateMovementService.php.html#101"><abbr title="App\Services\CreateMovementService::getMoneyBack">getMoneyBack</abbr></a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="Repositories/CashRegisterRepository.php.html#54"><abbr title="App\Repositories\CashRegisterRepository::getAvailableCash">getAvailableCash</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Services/CreateMovementService.php.html#51"><abbr title="App\Services\CreateMovementService::create">create</abbr></a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Models/CashRegister.php.html#27"><abbr title="App\Models\CashRegister::validateMoneyBack">validateMoneyBack</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Services/EmptyCashRegisterService.php.html#22"><abbr title="App\Services\EmptyCashRegisterService::emptyCashRegister">emptyCashRegister</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Services/GetAllMovementsService.php.html#16"><abbr title="App\Services\GetAllMovementsService::getAllMovements">getAllMovements</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/CreateMovementService.php.html#51"><abbr title="App\Services\CreateMovementService::create">create</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Services/CreateMovementService.php.html#101"><abbr title="App\Services\CreateMovementService::getMoneyBack">getMoneyBack</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/EmptyCashRegisterController.php.html#18"><abbr title="App\Http\Controllers\CashRegister\EmptyCashRegisterController::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/CashRegister/StatusCashRegisterController.php.html#18"><abbr title="App\Http\Controllers\CashRegister\StatusCashRegisterController::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetAllMovementsController.php.html#19"><abbr title="App\Http\Controllers\Movement\GetAllMovementsController::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Movement/GetMovementsController.php.html#18"><abbr title="App\Http\Controllers\Movement\GetMovementsController::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/CashRegisterRepository.php.html#63"><abbr title="App\Repositories\CashRegisterRepository::getStatusCashRegister">getStatusCashRegister</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/CreateMovementsRepository.php.html#41"><abbr title="App\Repositories\CreateMovementsRepository::getAmountMovementsByDate">getAmountMovementsByDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/CreateMovementsRepository.php.html#51"><abbr title="App\Repositories\CreateMovementsRepository::getAllMovements">getAllMovements</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/StatusCashRegisterService.php.html#16"><abbr title="App\Services\StatusCashRegisterService::statusCashRegister">statusCashRegister</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/CashRegisterRepository.php.html#54"><abbr title="App\Repositories\CashRegisterRepository::getAvailableCash">getAvailableCash</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.5</a> using <a href="https://secure.php.net/" target="_top">PHP 7.3.12</a> with <a href="https://xdebug.org/">Xdebug 3.0.1</a> and <a href="https://phpunit.de/">PHPUnit 9.5.0</a> at Sat Dec 26 23:14:45 UTC 2020.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js" type="text/javascript"></script>
+  <script src="_js/d3.min.js" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([15,0,0,1,0,0,0,1,1,1,1,15], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([27,0,0,0,0,0,0,1,1,1,1,24], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[75,2,"<a href=\"Console\/Kernel.php.html#8\">App\\Console\\Kernel<\/a>"],[100,2,"<a href=\"Exceptions\/Handler.php.html#8\">App\\Exceptions\\Handler<\/a>"],[100,3,"<a href=\"Http\/Controllers\/CashRegister\/CreateCashRegisterController.php.html#14\">App\\Http\\Controllers\\CashRegister\\CreateCashRegisterController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/CashRegister\/EmptyCashRegisterController.php.html#9\">App\\Http\\Controllers\\CashRegister\\EmptyCashRegisterController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/CashRegister\/StatusCashRegisterController.php.html#9\">App\\Http\\Controllers\\CashRegister\\StatusCashRegisterController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#10\">App\\Http\\Controllers\\Controller<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Movement\/CreateMovementController.php.html#13\">App\\Http\\Controllers\\Movement\\CreateMovementController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Movement\/GetAllMovementsController.php.html#10\">App\\Http\\Controllers\\Movement\\GetAllMovementsController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Movement\/GetMovementsController.php.html#9\">App\\Http\\Controllers\\Movement\\GetMovementsController<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#7\">App\\Http\\Kernel<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#7\">App\\Http\\Middleware\\Authenticate<\/a>"],[100,0,"<a href=\"Http\/Middleware\/CheckForMaintenanceMode.php.html#7\">App\\Http\\Middleware\\CheckForMaintenanceMode<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[0,2,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#9\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#7\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[0,8,"<a href=\"Models\/CashRegister.php.html#11\">App\\Models\\CashRegister<\/a>"],[0,1,"<a href=\"Models\/Movements.php.html#12\">App\\Models\\Movements<\/a>"],[0,1,"<a href=\"Models\/Transactions.php.html#12\">App\\Models\\Transactions<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#25\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#8\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#8\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#10\">App\\Providers\\EventServiceProvider<\/a>"],[100,4,"<a href=\"Providers\/RouteServiceProvider.php.html#8\">App\\Providers\\RouteServiceProvider<\/a>"],[66.66666666666666,8,"<a href=\"Repositories\/CashRegisterRepository.php.html#11\">App\\Repositories\\CashRegisterRepository<\/a>"],[27.27272727272727,6,"<a href=\"Repositories\/CreateMovementsRepository.php.html#12\">App\\Repositories\\CreateMovementsRepository<\/a>"],[93.33333333333333,6,"<a href=\"Services\/CreateCashRegisterService.php.html#11\">App\\Services\\CreateCashRegisterService<\/a>"],[81.48148148148148,17,"<a href=\"Services\/CreateMovementService.php.html#13\">App\\Services\\CreateMovementService<\/a>"],[0,5,"<a href=\"Services\/EmptyCashRegisterService.php.html#8\">App\\Services\\EmptyCashRegisterService<\/a>"],[0,4,"<a href=\"Services\/GetAllMovementsService.php.html#7\">App\\Services\\GetAllMovementsService<\/a>"],[0,2,"<a href=\"Services\/GetMovementsService.php.html#7\">App\\Services\\GetMovementsService<\/a>"],[0,3,"<a href=\"Services\/StatusCashRegisterService.php.html#7\">App\\Services\\StatusCashRegisterService<\/a>"],[100,0,"<a href=\"User.php.html#9\">App\\User<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Console\/Kernel.php.html#25\">App\\Console\\Kernel::schedule<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#35\">App\\Console\\Kernel::commands<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#37\">App\\Exceptions\\Handler::report<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#51\">App\\Exceptions\\Handler::render<\/a>"],[100,1,"<a href=\"Http\/Controllers\/CashRegister\/CreateCashRegisterController.php.html#25\">App\\Http\\Controllers\\CashRegister\\CreateCashRegisterController::__construct<\/a>"],[100,2,"<a href=\"Http\/Controllers\/CashRegister\/CreateCashRegisterController.php.html#34\">App\\Http\\Controllers\\CashRegister\\CreateCashRegisterController::__invoke<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CashRegister\/EmptyCashRegisterController.php.html#13\">App\\Http\\Controllers\\CashRegister\\EmptyCashRegisterController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/CashRegister\/EmptyCashRegisterController.php.html#18\">App\\Http\\Controllers\\CashRegister\\EmptyCashRegisterController::__invoke<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CashRegister\/StatusCashRegisterController.php.html#13\">App\\Http\\Controllers\\CashRegister\\StatusCashRegisterController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/CashRegister\/StatusCashRegisterController.php.html#18\">App\\Http\\Controllers\\CashRegister\\StatusCashRegisterController::__invoke<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Movement\/CreateMovementController.php.html#24\">App\\Http\\Controllers\\Movement\\CreateMovementController::__construct<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Movement\/CreateMovementController.php.html#29\">App\\Http\\Controllers\\Movement\\CreateMovementController::__invoke<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Movement\/GetAllMovementsController.php.html#14\">App\\Http\\Controllers\\Movement\\GetAllMovementsController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Movement\/GetAllMovementsController.php.html#19\">App\\Http\\Controllers\\Movement\\GetAllMovementsController::__invoke<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Movement\/GetMovementsController.php.html#13\">App\\Http\\Controllers\\Movement\\GetMovementsController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Movement\/GetMovementsController.php.html#18\">App\\Http\\Controllers\\Movement\\GetMovementsController::__invoke<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#15\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[0,2,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#19\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#14\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"],[0,8,"<a href=\"Models\/CashRegister.php.html#27\">App\\Models\\CashRegister::validateMoneyBack<\/a>"],[0,1,"<a href=\"Models\/Movements.php.html#18\">App\\Models\\Movements::transactions<\/a>"],[0,1,"<a href=\"Models\/Transactions.php.html#17\">App\\Models\\Transactions::movement<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#32\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#50\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#24\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#15\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#28\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#31\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#43\">App\\Providers\\RouteServiceProvider::map<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#59\">App\\Providers\\RouteServiceProvider::mapWebRoutes<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#73\">App\\Providers\\RouteServiceProvider::mapApiRoutes<\/a>"],[100,1,"<a href=\"Repositories\/CashRegisterRepository.php.html#22\">App\\Repositories\\CashRegisterRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/CashRegisterRepository.php.html#31\">App\\Repositories\\CashRegisterRepository::create<\/a>"],[100,2,"<a href=\"Repositories\/CashRegisterRepository.php.html#41\">App\\Repositories\\CashRegisterRepository::findByValueAndDenomination<\/a>"],[75,2,"<a href=\"Repositories\/CashRegisterRepository.php.html#54\">App\\Repositories\\CashRegisterRepository::getAvailableCash<\/a>"],[0,2,"<a href=\"Repositories\/CashRegisterRepository.php.html#63\">App\\Repositories\\CashRegisterRepository::getStatusCashRegister<\/a>"],[100,1,"<a href=\"Repositories\/CreateMovementsRepository.php.html#23\">App\\Repositories\\CreateMovementsRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/CreateMovementsRepository.php.html#32\">App\\Repositories\\CreateMovementsRepository::create<\/a>"],[0,2,"<a href=\"Repositories\/CreateMovementsRepository.php.html#41\">App\\Repositories\\CreateMovementsRepository::getAmountMovementsByDate<\/a>"],[0,2,"<a href=\"Repositories\/CreateMovementsRepository.php.html#51\">App\\Repositories\\CreateMovementsRepository::getAllMovements<\/a>"],[100,1,"<a href=\"Services\/CreateCashRegisterService.php.html#22\">App\\Services\\CreateCashRegisterService::__construct<\/a>"],[91.66666666666666,4,"<a href=\"Services\/CreateCashRegisterService.php.html#32\">App\\Services\\CreateCashRegisterService::create<\/a>"],[100,1,"<a href=\"Services\/CreateCashRegisterService.php.html#63\">App\\Services\\CreateCashRegisterService::addQuantity<\/a>"],[100,1,"<a href=\"Services\/CreateMovementService.php.html#36\">App\\Services\\CreateMovementService::__construct<\/a>"],[86.95652173913044,8,"<a href=\"Services\/CreateMovementService.php.html#51\">App\\Services\\CreateMovementService::create<\/a>"],[69.56521739130434,6,"<a href=\"Services\/CreateMovementService.php.html#101\">App\\Services\\CreateMovementService::getMoneyBack<\/a>"],[100,2,"<a href=\"Services\/CreateMovementService.php.html#147\">App\\Services\\CreateMovementService::calculateMoneyBack<\/a>"],[0,1,"<a href=\"Services\/EmptyCashRegisterService.php.html#13\">App\\Services\\EmptyCashRegisterService::__construct<\/a>"],[0,4,"<a href=\"Services\/EmptyCashRegisterService.php.html#22\">App\\Services\\EmptyCashRegisterService::emptyCashRegister<\/a>"],[0,1,"<a href=\"Services\/GetAllMovementsService.php.html#11\">App\\Services\\GetAllMovementsService::__construct<\/a>"],[0,3,"<a href=\"Services\/GetAllMovementsService.php.html#16\">App\\Services\\GetAllMovementsService::getAllMovements<\/a>"],[0,1,"<a href=\"Services\/GetMovementsService.php.html#11\">App\\Services\\GetMovementsService::__construct<\/a>"],[0,1,"<a href=\"Services\/GetMovementsService.php.html#16\">App\\Services\\GetMovementsService::getAmountMovementsByDate<\/a>"],[0,1,"<a href=\"Services\/StatusCashRegisterService.php.html#11\">App\\Services\\StatusCashRegisterService::__construct<\/a>"],[0,2,"<a href=\"Services\/StatusCashRegisterService.php.html#16\">App\\Services\\StatusCashRegisterService::statusCashRegister<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

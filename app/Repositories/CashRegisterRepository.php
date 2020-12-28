@@ -38,9 +38,14 @@ class CashRegisterRepository implements CashRegisterRepositoryInterface
      * @param int $value
      * @return CashRegister|null
      */
-    public function findByValueAndDenomination(string $denomination, int $value)
+    public function findByValueAndDenomination(string $denomination, int $value): CashRegister
     {
-        return $this->cashRegisterModel->where(['denomination' => $denomination, 'value' => $value])->first();
+        $cashRegister =  $this->cashRegisterModel->where(['denomination' => $denomination, 'value' => $value])->first();
+        if (!$cashRegister){
+            return new CashRegister();
+        }
+
+        return $cashRegister;
     }
 
     /**
@@ -53,5 +58,18 @@ class CashRegisterRepository implements CashRegisterRepositoryInterface
             return [];
         }
         return $availableCash->toArray();
+    }
+
+    /**
+     * @return array
+     */
+    public function getStatusCashRegister(): array
+    {
+        $statusCashRegister = $this->cashRegisterModel->orderBy('value', 'desc')->get();
+        if (empty($statusCashRegister)) {
+            return [];
+        }
+
+        return $statusCashRegister->toArray();
     }
 }

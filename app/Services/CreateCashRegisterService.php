@@ -36,8 +36,8 @@ class CreateCashRegisterService implements CreateCashRegisterServiceInterface
                 ->cashRegisterRepository
                 ->findByValueAndDenomination($data['denomination'], $data['value']);
 
-            if (empty($cashRegister)) {
-                $this->cashRegisterRepository->create($data);
+            if (empty($cashRegister->value)) {
+                $cashRegister = $this->cashRegisterRepository->create($data);
                 return ['message' => __('cash_register.create_success')];
             }
 
@@ -50,7 +50,7 @@ class CreateCashRegisterService implements CreateCashRegisterServiceInterface
 
             return ['message' => __('cash_register.create_success')];
         } catch (\Exception $exception) {
-            throw new \Exception($exception->getMessage(), $exception->getCode());
+            throw new \Exception($exception->getMessage(), 500);
         }
 
     }

@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Movements;
+use phpDocumentor\Reflection\Types\Integer;
 
 /**
  * Class MovementsRepository
@@ -31,5 +32,32 @@ class CreateMovementsRepository implements CreateMovementsRepositoryInterface
     public function create(array $data): Movements
     {
         return $this->movementModel->create($data);
+    }
+
+    /**
+     * @param string $date
+     * @return int
+     */
+    public function getAmountMovementsByDate(string $date): int
+    {
+        $movements = $this->movementModel->where('created_at', '<=', $date)->get();
+        if (empty($movements)){
+            return 0;
+        }
+
+        return $movements->sum('amount');
+    }
+
+    /**
+     * @return array
+     */
+    public function getAllMovements(): array
+    {
+        $movements = $this->movementModel->orderBy('id', 'desc')->get();
+        if (empty($movements)){
+            return [];
+        }
+
+        return $movements->toArray();
     }
 }

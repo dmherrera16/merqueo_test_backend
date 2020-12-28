@@ -2,7 +2,15 @@
 
 namespace App\Services;
 
+/**
+ * Interface CreateMovementServiceInterface
+ * @package App\Services
+ */
 interface CreateMovementServiceInterface
 {
-    public function create(array $data):array;
+    /**
+     * @param array $data
+     * @return array
+     */
+    public function create(array $data): array;
 }

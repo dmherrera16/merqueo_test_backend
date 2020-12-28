@@ -23,10 +23,15 @@ interface CashRegisterRepositoryInterface
      * @param int $value
      * @return CashRegister|null
      */
-    public function findByValueAndDenomination(string $denomination, int $value);
+    public function findByValueAndDenomination(string $denomination, int $value): CashRegister;
 
     /**
      * @return array
      */
     public function getAvailableCash(): array;
+
+    /**
+     * @return array
+     */
+    public function getStatusCashRegister(): array;
 }

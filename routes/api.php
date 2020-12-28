@@ -20,3 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post("cashRegister/create", "CashRegister\CreateCashRegisterController")->name("cashRegister.create");
 Route::post("movement/create", "Movement\CreateMovementController")->name("movement.create");
+Route::get('movement/getMovementsByDate', 'Movement\GetMovementsController')->name('movement.getMovementsByDate');
+Route::get('movement/getAllMovements', 'Movement\GetAllMovementsController')->name('movement.getAllMovements');
+Route::get('cashRegister/status', 'CashRegister\StatusCashRegisterController')->name('cashRegister.status');
+Route::post('cashRegister/empty', 'CashRegister\EmptyCashRegisterController')->name('cashRegister.empty');
